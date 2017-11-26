@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+  <a class="navbar-brand" href="http://localhost:4200/">Blog App</a>
+
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="http://localhost:4200/">All Posts</a>
+    </li>
+    <li *ngIf="loggedIn" class="nav-item">
+      <a class="nav-link" href="http://localhost:4200/add_post">Add Post</a>
+    </li>
+
+    <li *ngIf="!loggedIn" class="nav-item">
+      <a class="nav-link" href="http://localhost:4200/logIn">Login</a>
+    </li>
+
+  </ul>
+</nav>
+
+
+<div class="container">
+  <!--Author:-->
+  <!--<input type="text" #author>-->
+  <!--password:-->
+  <!--<input type="text" #password>-->
+
+  <!--<button (click)="logIn(author.value, password.value)" > Login </button>-->
+  <div class="jombotron">
+
+    <form>
+      <div class="form-group">
+        <label >Author</label>
+        <input type="text" class="form-control"  #author>
+      </div>
+
+      <div class="form-group">
+        <label >Password</label>
+        <input type="password" class="form-control"  #password>
+      </div>
+
+      <button class="btn btn-success btn-sm" (click)="logIn(author.value, password.value)" > Login </button>
+
+    </form>
+  </div>
+</div>

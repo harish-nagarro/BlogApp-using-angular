@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+  <a class="navbar-brand" href="http://localhost:4200/">Blog App</a>
+
+  <ul class="navbar-nav ">
+    <li class="nav-item active">
+      <a class="nav-link" href="http://localhost:4200/">All Posts</a>
+    </li>
+    <li *ngIf="loggedIn" class="nav-item">
+      <a class="nav-link" href="http://localhost:4200/add_post">Add Post</a>
+    </li>
+
+    <li *ngIf="!loggedIn" class="nav-item">
+      <a class="nav-link" href="http://localhost:4200/logIn">Login</a>
+    </li>
+  </ul>
+
+  <ul class="navbar-nav  ml-auto" >
+    <li *ngIf="loggedIn" class="nav-item">
+      <a class="nav-link"> welcome {{ loggedInUser }} </a>
+    </li>
+
+    <li *ngIf="loggedIn" class="nav-item">
+      <button class="btn btn-danger btn-sm" (click)="logOut()"> LogOut</button>
+    </li>
+  </ul>
+
+</nav>
+
+<div align="center">
+  <div class="row ">
+    <div class="col-md-4 offset-md-2">
+      <button class="btn btn-sm "(click)="showAllPosts()" [class.activeFilter]="this.curPosts === 'all'" >All</button>
+      <button class="btn btn-sm" *ngIf="loggedIn" [class.activeFilter]="this.curPosts === 'myPosts'" (click)="showMyPosts()"  >My Posts</button>
+      <button class="btn btn-sm" *ngIf="loggedIn" [class.activeFilter]="this.curPosts === 'favourites'" (click)="showFavourites()" >Favourites</button>
+      <button class="btn btn-sm" [class.activeFilter]="this.curPosts === 'popular'" (click)="popular()"  >Popular</button>
+
+    </div>
+
+    <div class="col-md-3 ">
+      <button class="btn btn-sm " (click)="categories('technology')" [class.activeFilter]=" this.curPosts === 'technology'" >Technology</button>
+      <button class="btn btn-sm" [class.activeFilter]="this.curPosts === 'politics'" (click)="categories('politics')"  >Politics</button>
+      <button class="btn btn-sm" [class.activeFilter]="this.curPosts === 'sports'" (click)="categories('sports')" >Sports</button>
+      <button class="btn btn-sm" [class.activeFilter]="this.curPosts === 'others'" (click)="categories('others')"  >Others</button>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="curPosts == 'all' ">
+  <!--<h1>{{tiles}}</h1>-->
+  <app-tiles-list [tilesList]="tiles"></app-tiles-list>
+</div>
+
+<div *ngIf="curPosts == 'myPosts' " >
+  <app-tiles-list [tilesList]="(tiles|filterBlogs: loggedInUser)"></app-tiles-list>
+</div>
+
+<div *ngIf="curPosts == 'popular' " >
+  <app-tiles-list [tilesList]="(tiles|sort)"></app-tiles-list>
+</div>
+
+<div *ngIf="curPosts == 'favourites' " >
+  <app-tiles-list [tilesList]="(tiles| favourites:favourites )"></app-tiles-list>
+</div>
+
+<div *ngIf="curPosts == 'technology'  || curPosts == 'politics'  || curPosts == 'sports'  || curPosts == 'others' " >
+  <app-tiles-list [tilesList]="(tiles| category: curPosts )"></app-tiles-list>
+</div>

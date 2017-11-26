@@ -1,0 +1,12 @@
+.right{
+  text-align: right;
+}
+
+.activeFilter{
+  background: #0099cc;
+  color: #ffffff;
+}
+
+.btn{
+  margin-top: 5px;
+}

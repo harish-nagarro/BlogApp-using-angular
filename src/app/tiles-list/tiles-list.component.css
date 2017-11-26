@@ -1,0 +1,9 @@
+.card {
+  margin: 20px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.jumbotron{
+  margin-top: 9px;
+}

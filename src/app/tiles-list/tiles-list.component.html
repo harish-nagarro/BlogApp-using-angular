@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div *ngFor="let tile of tilesData" class="col-md-4">
+
+        <div (click)="tileDetail(tile)">
+
+          <div class="card">
+            <div class="view overlay hm-white-slight">
+              <a href="#">
+                <div class="mask"></div>
+              </a>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">{{tile.title.substring(0,30)}}</h4>
+              <!--Text-->
+              <p class="card-text">{{tile.info.substring(0,200)}}</p>
+              <footer class="blockquote-footer">{{tile.author}} </footer>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
