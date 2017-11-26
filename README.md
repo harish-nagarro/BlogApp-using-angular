@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## User login details
-** name/password: **  author 1/author 1, author 2/author 2 
+**name/password:**  author 1/author 1, author 2/author 2 
 
 ## Development server
 
