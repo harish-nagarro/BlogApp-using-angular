@@ -5,6 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## User login details
 **name/password:**  author 1/author 1, author 2/author 2 
 
+## How to start this app
+Run `npm install` for installing packages and `npm start` will start json server, angular app.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
