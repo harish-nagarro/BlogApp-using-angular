@@ -3,7 +3,7 @@
     {
       "title": "Black Friday racks up $5.03B in online sales, $2B on mobile alone",
       "info": "The final figures for Black Friday online sales are in, and it’s another record-breaking day e-commerce in the U.S. Adobe says that shoppers spent $5.03 billion online in a race for bargains for themselves and to gift to others.The figures come the day after Thanksgiving racked up a record $2.87 billion in online sales Adobe analyses 80 percent of online transactions to the 100 largest web retailers in the country to come up with its numbers. The final figure surpassed its own estimates, where were for $5 billion of sales.",
-      "likes": 5,
+      "likes": 6,
       "author": "author 1",
       "category": "technology",
       "id": 0
@@ -13,7 +13,7 @@
       "info": "Sometime in late August, Murali Vijay made a call to his friend Murthy Meghavan, who runs a surfing school on the Mamallapuram stretch near Chennai. The batsman had just returned from London after a wrist surgery and wanted to “stay aloof from negative thoughts” by surfing, a passion he has nurtured of late. Despite the initial hesitation — whether it was advisable for Vijay to surf when the injury wasn’t fully healed yet — his friend asked him to come over. It coincided with a surfing festival and Vijay took gleefully to the waves. About a week later, Vijay was a more positive person. The web of doubts was cleared and he was brimming with newfound energy ahead of another season.",
       "category": "Sports",
       "author": "author 2",
-      "likes": 0,
+      "likes": 1,
       "id": 1
     },
     {
@@ -21,7 +21,7 @@
       "info": "Ahmedabad: Union finance minister Arun Jaitley on Saturday hit back at Congress vice president Rahul Gandhi for questioning the Rafale fighter aircraft deal, saying unlike during Congress regimes when middlemen ruled the roost, there was no \"Quattrocchi\" in the contract for the fighter jet.\n\nJaitley, who is the BJP's election in-charge for Gujarat, was referring to Ottavio Quattrocchi, the Italian businessman believed to be involved in the Bofors scam which came to light when Rajiv Gandhi was prime minister.\n\n\n\"It (Rafale deal) was a government-to-government transaction, between two governments. It wasn't like what used to happen during Congress governments, when middlemen used to be there in every transaction. There wasn't any Quattrocchi in this transaction,\" Jaitley told reporters in Ahmedabad.",
       "category": "Politics",
       "author": "author 2",
-      "likes": 1,
+      "likes": 2,
       "id": 2
     },
     {
@@ -61,7 +61,7 @@
       "info": "Tata Motors’ Nano, the cheapest car launched in recent times, is now also among models clocking lowest monthly production and sales volume (in double digits to be precise). The average daily production of just two Nano cars at the company’s Sanand plant is indication enough that this vehicle is now as good as obsolete. Dealers of Tata Motors in most parts of the country have stopped placing orders for this small car in the last three-four months and the showrooms are displaying contemporary models such as Tiago, Tigor, Hexa and Nexon.   \n\nHere are the numbers: Tata Motors dispatched 180 Nanos to its 630 sales outlets this August (against 711 in August 2016). The number came down to 124 units in September and further dipped to just 57 units in October. September and October were festive months with high demand for car. It was also reported last week that production of electric Nano is underway for a launch soon through a joint venture with Tata Motors and Coimbatore-based Jayem Automotives. It was reported that this new car will be called Neo, dealing a death  blow to Nano. ",
       "category": "Others",
       "author": "author 1",
-      "likes": 0,
+      "likes": 1,
       "id": 7
     }
   ],
@@ -71,8 +71,12 @@
       "author": "author 1",
       "password": "author 1",
       "favourites": [
+        "4",
+        "1",
         "6",
-        "4"
+        "7",
+        "2",
+        "0"
       ]
     },
     {

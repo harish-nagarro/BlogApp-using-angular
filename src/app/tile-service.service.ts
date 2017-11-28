@@ -6,8 +6,8 @@ import {Observable} from 'rxjs/Observable';
 import {map} from 'rxjs/operator/map';
 import {Router} from '@angular/router';
 
-const BASE_URL = 'http://localhost:3000/tiles/';
-const USERS_URL = 'http://localhost:3000/users/';
+const BASE_URL = 'https://blooming-dawn-73581.herokuapp.com/tiles/';
+const USERS_URL = 'https://blooming-dawn-73581.herokuapp.com/users';
 const header = {headers: new Headers( {'Content-Type': 'application/json'})};
 
 @Injectable()
