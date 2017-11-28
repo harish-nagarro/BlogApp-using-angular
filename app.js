@@ -4,6 +4,7 @@ const path = require('path');
 const http = require('http');
 const app = express();
 
+
 // Parsers
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
@@ -12,7 +13,6 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // API location
-// app.use('/api', api);
 
 // Send all other requests to the Angular app
 app.get('*', (req, res) => {
