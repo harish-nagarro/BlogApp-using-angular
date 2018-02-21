@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## User login details
 ### App Hosted [link](https://blog314.herokuapp.com/ ).
-**name/password:**  author 1/author 1, author 2/author 2. Logib users have some additional features like adding new post, favourite blogs etc. 
+**name/password:**  author 1/author 1, author 2/author 2. Login users have some additional features like adding new post, favourite blogs etc. 
 
 ## How to start this app
 Run `npm install` for installing packages and `npm start` will start json server, angular app.
